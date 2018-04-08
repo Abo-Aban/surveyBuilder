@@ -1,0 +1,1244 @@
+@font-face {
+font-family: Continuum;
+src: url("../fonts/ContinuumMedium.ttf") format("opentype");
+}
+
+@font-face {
+font-family: Continuum;
+font-weight: bold;
+src: url("../fonts/Continuum-Bold-Regular.ttf") format("opentype");
+}
+
+body {
+  background-color: #293E53;
+  color: #E2E8ED;
+  font-family: Continuum !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  font-weight: 200;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+
+/* =============== Utilities =============== */
+
+/* ======================================= */
+
+/* =============== ul customization =============== */
+  ul{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 24px;
+    padding-left: 24px;
+    margin-bottom: 0;
+    margin-top: 0; 
+  }
+    
+/* ======================================= */
+
+
+
+/* =============== Buttons =============== */
+
+.btn,
+.main-btn{
+  cursor: pointer;
+}
+
+.main-btn{
+  outline: none;
+  border: none;
+  padding: 8px 30px;
+  margin-top: 1vh;
+}
+
+/* disabled button styling */
+.main-btn[disabled],
+.main-btn:disabled{
+  opacity: .5;
+  cursor: initial;
+}
+
+
+.main-btn-light{
+  background: #E2E8ED;
+  color: #293E53;
+}
+
+.main-btn-light:hover{
+  background: #34495F;
+}
+
+.main-btn-light-dark {
+  background: #34495F;
+  color: #E2E8ED;
+}
+
+.main-btn-light-dark:hover {
+  background: #293E53;
+}
+
+.main-btn-dark {
+  background: #293E53;
+  color: #E2E8ED;
+}
+
+.main-btn-dark:hover {
+  background: #34495F;
+}
+
+.tiny-option-btn{
+  text-align: center;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 50%;
+  padding-top: 1px;
+  color: #293E53;
+  background: #fff;
+  font-size: .82em;
+  /* display: none; hidden by default */
+  position: absolute;
+  top: -8px;
+  right: -8px;
+
+  transition-duration: .1s;
+}
+
+.tiny-option-btn:hover{
+  transform: scale(1.2, 1.2);
+}
+
+.tiny-option-btn:active,
+.tiny-option-btn:focus{
+  transform: scale(.9, .9);
+}
+
+
+/* show the tiny-btn on hover */
+/* .main-card:hover .tiny-option-btn{
+  display: inline-block;
+}   */
+
+
+/* ======================================= */
+
+/* =============== icons =============== */
+
+.main-icon{
+  font-size: 1.2em;
+  cursor: pointer;
+  line-height: 1.5em;
+
+  transition-duration: .2s; 
+}
+
+.main-icon:hover{
+  opacity: .5;
+}
+
+/* ======================================= */
+
+/* ======================================= */
+
+
+/* =============== Texts =============== */
+
+.main-title,
+.top-nav-title {
+  text-transform: capitalize;
+}
+
+.main-title-main {
+  font-size: 4em;
+}
+
+.main-title-sub {
+  font-size: 1.2em;
+}
+
+.main-text-title{
+  text-transform: capitalize;
+}
+
+a{
+  text-transform: none;
+}
+
+/* Text Colors */
+
+.text-main-dark {
+  color: #293E53 !important;
+}
+
+.text-main-light-dark {
+  color: #34495F !important;
+}
+
+.text-main-light {
+  color: #E2E8ED !important;
+}
+
+.text-main-white{
+  color: #FFFFFF !important;
+}
+
+.text-main-blue{
+  color: #4AB3C8 !important;
+}
+
+.text-main-red{
+  color: #CC5E5D !important;
+}
+
+.text-main-green{
+  color: #45B86D !important;
+}
+
+.text-main-orange{
+  color: #F6AC53 !important;
+}
+
+.text-main-purple {
+  color: #6E7FCD !important;
+}
+
+.text-main-rose {
+  color: #D4667F !important;
+}
+
+/* ======================================= */
+
+
+/* =============== top-navigation =============== */
+/* contains the app name in the top of the page */
+
+.top-nav {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  padding-left: 20px;
+  top: 0px;
+  left: 0px;
+
+  z-index: 99;
+
+  position: fixed;
+}
+
+.top-nav-title {
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+
+.logged-info{
+  max-width: 180px;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.logged-info:hover,
+.logged-info:focus,
+.logged-info:active{
+  background: #34495F!important;
+}
+
+.logged-info img{
+  /* float: left; */
+  height: 35px;
+  width: 35px;
+  margin: 10px 7px;
+  display: inline-block;
+  border-radius: 50%;
+
+}
+
+.logged-info .logged-user{
+  max-width: 100px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.logged-info .caret{
+  display: inline-block;
+  width: 17px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.logged-info .caret span{
+  vertical-align: middle;
+}
+
+
+/* ======================================= */
+
+/* =============== Content =============== */
+/*contains page content, header and options*/
+
+.content {
+  margin-top: 85px;
+
+  width: 90vw;
+  margin-left: 5vw;
+}
+
+.content-hdr {
+  border-bottom: 3px solid rgba(52, 73, 95, 0.637);
+}
+
+.content-hdr-title {
+  font-size: 1.9em;
+  display: inline-block;
+}
+
+.content-hdr-options {
+  margin-right: 20px;
+  float: right;
+}
+
+.content-hdr,
+.content-hdr-title,
+.content-hdr-options {
+  height: 60px;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+.content-bdy {
+  padding: 25px 50px;
+}
+
+/* .content-bdy-container {} */
+
+/* ======================================= */
+
+/* =============== Card =============== */
+
+.main-card {
+  width: 185px;
+  height: 220px;
+  margin: 18px;
+  display: inline-block;
+  cursor: pointer;
+
+  position: relative;
+
+  transition-duration: .3s;
+}
+
+.main-card:hover{
+  opacity: .8;
+}
+
+.main-card-bdy {
+  width: 100%;
+  height: 170px;
+  text-align: center;
+  line-height: 155px;
+  font-size: 5.5em;
+  padding-top: 15px; 
+}
+
+.main-card-title {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* ======================================= */
+
+/* =============== List =============== */
+
+.main-list {
+  width: 100%;
+  height: 85px;
+  padding: 1px 10px; 
+  border-bottom: 2px solid #34495F;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.main-list:hover {
+  background: rgb(245, 248, 251)!important;
+}
+
+/* show options when hover main-list*/
+.main-list:hover .main-list-options{
+  display: inline-block;
+}
+
+.main-list-icon {
+  font-size: 2em;
+  padding: 0 12px;
+}
+
+.main-list-title {
+  font-size: 1.4em;
+  text-transform: capitalize;
+  margin-left: 10px;
+  
+}
+
+.main-list-title,
+.main-list-sprtr,
+.main-list-icon{
+  line-height: 85px;
+  float: left;
+  
+}
+
+/* main-list-options is hidden by default */
+.main-list-options {
+  float: right;
+  margin-right: 20px; 
+  font-size: 1.3em;
+  line-height: 85px;
+  display: none;
+
+  transition-duration: .2s;
+}
+
+.main-list-options:hover{
+  transform: scale(1.1, 1.1);
+}
+
+.main-list-sprtr {
+  width: 2px;
+  height: 55px;
+  margin-top: 15px;
+  margin-left: 5px;
+  background-color: #ddd;
+}
+
+/* ======================================= */
+
+
+/* =============== Boxes =============== */
+
+.box {
+  padding: 8px 30px;
+}
+
+.box-hdr{
+  min-height: 20px;
+  font-size: 1.5em;
+  clear: both;
+  overflow: hidden;
+}
+
+.box-bdy{
+  padding-top: 10px;
+  clear: both;
+  overflow: hidden;
+}
+
+.box-ftr{
+  min-height: 30px;
+  padding-top: 5px;
+  overflow: hidden;
+}
+
+.box-sm {
+  width: 26vw;
+  margin-left: 37vw;
+}
+
+.box-md {
+  width: 50vw;
+  margin-left: 25vw;
+}
+
+.box-lg {
+  width: 90vw;  
+  margin-left: 5vw;
+}
+
+
+/* ======================================= */
+
+
+/* =============== DropDown =============== */
+
+.settings-dropdown,
+.logged-dropdown{
+  display: inline-block;
+}
+
+.settings-dropdown .dropdown-item,
+.logged-dropdown .dropdown-item{
+  line-height: 25px;
+  font-size: 1.1rem!important;
+  font-weight: 200;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.settings-dropdown .dropdown-item:active,
+.logged-dropdown .dropdown-item:active{
+  background: #34495F;
+}
+
+.settings-dropdown .dropdown-item:hover,
+.settings-dropdown .dropdown-item:focus,
+.logged-dropdown .dropdown-item:hover,
+.logged-dropdown .dropdown-item:focus{
+  outline: none!important;
+}
+
+
+/* ======================================= */
+
+
+/* =============== Sperators =============== */
+
+/* ======================================= */
+
+
+/* =============== Inputs =============== */
+
+.inpt{
+  background: #FFFFFF;
+  outline: none;
+  border: none;
+  min-height: 40px;
+  width: 100%;
+  margin-bottom: 3px;
+  padding: 2px 10px;
+  display: inline-block;
+}
+
+.inpt.inpt-invalid{
+  border: 1px solid #CC5E5D;
+}
+
+.inpt-group{
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.inpt-group .inpt{
+  padding-right: 35px!important;
+}
+
+.inpt-group .inpt-icon{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  display: inline-block;
+  padding-right: 8px;
+  line-height: 35px;
+  vertical-align: bottom;
+  font-size: .9em;
+  cursor: pointer;
+  color: #34495F;
+
+  transition-duration: .2s
+}
+
+.inpt-group .inpt-icon:hover{
+  color: #222222;
+  transform: scale(1.2, 1.2); 
+}
+
+textarea.inpt{
+  resize: vertical!important;
+  -o-resize: vertical!important;
+  -moz-resize: vertical!important;
+}
+
+.inpt-lbl{
+  font-size: 1em;
+  font-weight: 100;
+  vertical-align: bottom;
+  margin-bottom: 0;
+}
+
+.inpt-help{
+  user-select: none;
+}
+
+/* ======================================= */
+
+/* =============== Checkboxes =============== */
+
+
+/* Customize the label (the chk) */
+
+.chk {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.chk input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom checkbox */
+
+.chk-mrk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+
+.chk:hover input~.chk-mrk {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+/* Create the chk-mrk/indicator (hidden when not checked) */
+
+.chk-mrk:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the chk-mrk when checked */
+
+.chk input:checked~.chk-mrk:after {
+  display: block;
+}
+
+/* Style the chk-mrk/indicator */
+
+.chk .chk-mrk:after {
+  left: 9px;
+  top: 5px;
+  width: 8px;
+  height: 14px;
+  border: solid #293E53;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ======================================= */
+
+
+/* =============== Profile =============== */
+.profile-img-container{
+  width: 250px;
+  height: 300px;
+  background: #FFFFFF;
+  float: left;
+  position: relative;
+}
+
+.profile-img{
+  display: inline-block;
+}
+
+.profile-img,
+.profile-img-overlay
+{
+  width: 250px;
+  height: 300px;
+  line-height: 300px;
+  top: 0;
+  left: 0;
+}
+
+.profile-img-overlay{
+  opacity: 0;
+  text-align: center;
+  color: #FFFFFF;
+  background: #000000ab;
+  position: absolute;
+  cursor: pointer;
+  
+  transition: opacity ease-in .3s;
+}
+
+/* show the overlay on mouse hover */
+.profile-img-container:hover .profile-img-overlay{
+  opacity: 1;
+}
+
+/* hide the file upload input */
+.profile-img-overlay input{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+} 
+.profile-img-overlay label{
+  margin: 0;
+}
+
+
+/* 
+.profile-img-overlay:hover{
+  transform: scale(2,2);
+} */
+
+.profile-data{
+  width: calc(100% - 250px); 
+  height: 300px;
+  /* background: #CC5E5D; */
+  float: left;
+  clear: right;
+}
+
+.profile-statistics{
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+/* make the first td fit to the content */
+.profile-statistics td:first-child{
+  white-space: nowrap;
+  width: 1%;
+}
+
+/*remove the top border of all td's inside the table*/
+.profile-statistics td{
+  border-top-width: 0;
+  background: #FFFFFF;
+  color: #293E53;
+  border-bottom: 3px solid #E2E8ED;
+  padding-left: 8px;  
+}
+/* ======================================= */
+
+
+/* =============== Background =============== */
+/* blue: #4AB3C8,
+red: #CC5E5D,
+green: #45B86D,
+orange: #F6AC53, */
+
+.bg-main-dark {
+  background: #293E53!important;
+}
+
+.bg-main-light-dark {
+  background: #34495F!important;
+}
+
+.bg-main-light {
+  background: #E2E8ED!important;
+}
+
+.bg-main-white {
+  background: #FFFFFF!important;
+}
+
+.bg-main-blue {
+  background: #4AB3C8 !important;
+}
+
+.bg-main-red {
+  background: #CC5E5D !important;
+}
+
+.bg-main-orange {
+  background: #F6AC53 !important;
+}
+
+.bg-main-green {
+  background: #45B86D !important;
+}
+
+.bg-main-purple {
+  background: #6E7FCD !important;
+}
+
+.bg-main-rose {
+  background: #D4667F !important;
+}
+
+
+
+/* ======================================= */
+
+/* =============== Alert =============== */
+
+.alerty{
+  width: 100%;
+  padding: 5px 10px;
+  background: #FFFFFF;
+  border-left: 10px solid #293E53 !important; /* default style of alerty */
+  color: #293E53 !important;
+  font-size: 1em;
+  text-align: left;
+  margin: 2px 0;
+}
+
+.alerty-danger{
+  border-left-color: #CC5E5D !important;
+  color: #CC5E5D !important;
+}
+.alerty-info{
+  border-left-color: #4AB3C8 !important;
+  color: #4AB3C8 !important;
+}
+.alerty-success{
+  border-left-color: #45B86D !important;
+  color: #45B86D !important;
+}
+
+.alerty-fade{
+  cursor: pointer;
+}
+
+/* ======================================= */
+
+/* =============== Cursors =============== */
+
+.cur-ptr{
+  cursor: pointer;
+}
+
+/* ======================================= */
+
+/* =============== Flexbox  =============== */
+
+.flex{
+  display: flex!important;
+  /* padding: 5px; */
+  /* width: 100%; */
+  flex-flow: row wrap;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+/* ======================================= */
+
+
+
+
+
+/* =============== Width Specifires =============== */
+
+.w-90 {
+  width: 90% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.w-30 {
+  width: 30% !important;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+.w-10 {
+  width: 10% !important;
+}
+
+.w-5 {
+  width: 5% !important;
+}
+
+/* ======================================= */
+
+/* ============== Margins  =============== */
+
+.mt-10{
+  margin-top: 10vh!important;
+}
+.mt-15{
+  margin-top: 15vh!important;
+}
+.mt-20{
+  margin-top: 20vh!important;
+}
+.mt-30{
+  margin-top: 30vh!important;
+}
+
+/* ======================================= */
+
+ /* =============== Questions =============== */
+ .ques-text{
+   padding: 20px;
+ }
+
+ /* .ques-chk{
+   padding: 5px 0;
+   
+ } */
+
+ .ques-chk .chk {
+  padding-left: 35px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.ques-chk .chk .chk-mrk {
+  height: 36px;
+  width: 36px;
+  top: calc(50% - 18px);
+  background: #FFFFFF;
+}
+
+
+.ques-chk .chk .chk-mrk:after {
+  left: 14px;
+  top: 10px;
+  width: 10px;
+  height: 16px;
+  border-width: 0 4px 4px 0;
+}
+ 
+.ques-alter{
+  padding: 5px 20px;
+  margin: 7px 0;
+  margin-left: 7px;
+}
+
+
+
+/* override the progress bar border-radius */
+.ques_progress .progress{
+  border-radius: 0;
+  height: 28px;
+}
+
+/* ======================================= */
+
+
+/* ============= Search Bar ============= */
+.search-bar{
+  clear: both;
+}
+
+.search-bar .inpt-icon{
+  top: 3px;
+  margin-right: 5px;
+}
+
+
+/* ======================================= */
+
+
+/* ============= Statistics ============= */
+
+.ques-statistics{
+  clear: both;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+
+/* override the default border radius in the ques-statistics */
+.ques-statistics .progress{
+  border-radius: 0;
+  height: 25px;
+  width: 20%;
+  /* transform: rotate(270deg); */
+  /* transform-origin: top left; */
+  
+}
+
+.ques-statistics-text{
+  /* font-size: .85em; */
+  line-height: 25px;
+  width: 80%;
+  word-wrap: break-word;
+  
+}
+
+/* ======================================= */
+
+
+
+/* ========= Custom Media Query  ========= */
+
+@media screen and (max-width: 992px) {
+   
+  /* =============== Boxes =============== */
+    .box-sm,
+    .box-md {
+      width: 50vw;
+      margin-left: 25vw;
+    }
+
+    /* ======================================= */
+
+    /* =============== Card =============== */
+
+      .main-card {
+        margin: 14px;
+      }
+
+    /* ======================================= */
+
+    /* =============== List =============== */
+
+
+    .main-list {
+      height: 55px;
+      padding: 1px 10px;
+    }
+
+    .main-list-icon {
+      font-size: 1.5em;
+      padding: 0 8px;
+    }
+
+    .main-list-title {
+      margin-left: 10px;
+      font-size: 1.2em;
+    }
+    
+    .main-list-title,
+    .main-list-sprtr,
+    .main-list-icon {
+      line-height: 55px;
+    }
+
+    .main-list-options {
+      margin-right: 10px;
+      font-size: 1em;
+      line-height: 55px;
+      display: inline-block;
+    }
+
+    .main-list-sprtr {
+      width: 2px;
+      height: 35px;
+      margin-top: 10px;
+      /* margin-left: 5px; */
+    }
+
+      /* ======================================= */
+
+      /* =============== Profile =============== */
+      .profile-img-container{
+        margin-left: calc(50% - 125px);
+      }
+
+      .profile-data{
+        width: 100%;
+        height: auto;
+        clear: both;
+
+        padding-left: 0!important;
+      }
+      
+      .profile-data .col{
+        flex-basis: unset;
+        
+      }
+
+      .profile-statistics{
+        font-size: .85em;
+        margin-top: 1vh!important;
+      }
+
+      /* ======================================= */
+
+
+      /* ============= Statistics ============= */
+
+      .ques-statistics{
+        /* clear: both; */
+        border-bottom: 2px solid rgb(196, 209, 223);
+      }
+
+      /* override the default border radius in the ques-statistics */
+      .ques-statistics .progress{
+        /* border-radius: 0; */
+        height: 20px;
+        font-size: .6em;
+        /* transform: rotate(270deg); */
+        /* transform-origin: top left; */
+        
+      }
+
+      .ques-statistics-text{
+        line-height: 20px;
+        
+      }
+
+      /* ======================================= */
+
+   
+}
+
+@media screen and (max-width: 576px) {
+
+  /* =============== Top Navigation =============== */
+    .logged-info{
+      width: 70px;
+    }
+
+    .logged-info .logged-user{
+      display: none;
+    }
+
+  /* ======================================= */
+
+  /* =============== Texts =============== */
+
+  .main-title-main {
+    font-size: 2em;
+  }
+  
+  .main-title-sub {
+    font-size: .8em;
+  }
+
+  /* ======================================= */
+
+  /* =============== Boxes =============== */
+    .box-sm,
+    .box-md,
+    .box-lg {
+      width: 90vw;
+      margin-left: 5vw;
+    }
+
+  /* ======================================= */
+
+  /* =============== Content =============== */
+  /*contains page content, header and options*/
+
+    .content-bdy {
+      padding: 15px 10px;
+    }
+
+  /* ======================================= */
+
+
+  /* =============== Texts =============== */
+
+  /* ======================================= */
+
+  /* =============== Buttons =============== */
+    .main-btn{
+      width: 100%!important;
+    }
+  /* ======================================= */
+
+
+  /* =============== Flexbox =============== */
+  .flex{
+    justify-content: center!important;
+  }
+  /* ======================================= */
+
+  /* =============== Questions =============== */
+  .ques_progress{
+    width: 100%!important;
+  }
+
+  
+  /* reduce quest-type lead text size on the new question page */
+  /* .quest-type .lead{
+    font-size: .7em;
+  } */
+
+  /* break the line after the select and the type */
+  .quest-type .alters-span,
+  .quest-type .type-span{
+    display: block;
+    float: left;
+  }
+
+
+  /* ======================================= */
+
+  /* =============== Statistics =============== */
+
+  /* .ques-statistics{
+    clear: both;
+    border-width: 0;
+  } */
+
+  /* override the default border radius in the ques-statistics */
+  .ques-statistics .progress{
+    width: 100%;
+  }
+
+  .ques-statistics-text{
+    /* line-height: 20px; */
+    width: 100%;
+    padding-left: 0!important; 
+    
+  }
+
+  /* ======================================= */
+
+  /* =============== Profile =============== */
+  
+    .profile-statistics td:first-child{
+      white-space: normal;
+      width: 40%;
+    }
+  /* ======================================= */
+/* make the first td fit to the content */
+
+}
