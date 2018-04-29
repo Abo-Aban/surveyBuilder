@@ -3,17 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class PagesController extends Controller
 {
     
     public function dashboard(){
-        return view('/dahsboard');
+        return view('dahsboard');
     }
 
 
-    public function profile(){
-        return view('profile');
+    
+
+    public function users(){
+        return view('users');        
     }
 
 

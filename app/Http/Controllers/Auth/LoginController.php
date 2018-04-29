@@ -36,11 +36,8 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-
-
-
-
-
+    
+    
     /* 
     specify which field is used to login  
     */

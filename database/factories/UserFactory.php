@@ -21,3 +21,19 @@ $factory->define(App\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+
+$factory->define(App\Question::class, function(Faker $faker){
+    return [
+        'survey_id' => 2,
+        'question' => $faker->sentence(20),
+        'question_type' => ($faker->boolean)? 'mcq' : 'scq',
+        'alters_count' => mt_rand(2,5),
+        'alter_1' => $faker->sentence(3),
+        'alter_2' => $faker->sentence(3),
+        'alter_3' => $faker->sentence(3),
+        'alter_4' => $faker->sentence(3),
+        'alter_5' => $faker->sentence(3),
+
+    ];
+});

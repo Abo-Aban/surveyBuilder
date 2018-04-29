@@ -304,6 +304,7 @@ a{
 .content-hdr-options {
   margin-right: 20px;
   float: right;
+  clear: both;
 }
 
 .content-hdr,
@@ -316,6 +317,7 @@ a{
 
 .content-bdy {
   padding: 25px 50px;
+  clear: both;
 }
 
 /* .content-bdy-container {} */
@@ -355,6 +357,10 @@ a{
   line-height: 50px;
   text-transform: capitalize;
   text-align: center;
+}
+
+.main-card-icon{
+  /* aaaa */
 }
 
 /* ======================================= */
@@ -862,6 +868,10 @@ orange: #F6AC53, */
 
 /* =============== Width Specifires =============== */
 
+.w-95 {
+  width: 95% !important;
+}
+
 .w-90 {
   width: 90% !important;
 }
@@ -958,13 +968,33 @@ orange: #F6AC53, */
   margin-left: 7px;
 }
 
-
-
 /* override the progress bar border-radius */
 .ques_progress .progress{
   border-radius: 0;
   height: 28px;
 }
+
+
+/* questions view */
+.quest-del-btn{
+  margin-left: 10px;
+  text-align: right;
+  float: right;
+  cursor: pointer;
+
+  transition-duration: .3s;
+}
+
+.quest-del-btn:hover{
+  transform: scale(1.3, 1.3);
+}
+.quest-del-btn:active,
+.quest-del-btn:focus{
+  transform: scale(.9, .9);
+}
+
+
+
 
 /* ======================================= */
 
@@ -992,14 +1022,27 @@ orange: #F6AC53, */
   padding-bottom: 5px;
 }
 
-/* override the default border radius in the ques-statistics */
+/* override the default border radius of progress in the ques-statistics */
 .ques-statistics .progress{
+  position: relative;
   border-radius: 0;
   height: 25px;
   width: 20%;
   /* transform: rotate(270deg); */
   /* transform-origin: top left; */
   
+}
+
+/* show the no of particis on hover of progress */
+.ques-partici{
+  line-height: 25px;
+  font-size: 1.3em;
+  position: absolute;
+  display: none;
+}
+
+.ques-statistics:hover .ques-partici{
+  display: block;
 }
 
 .ques-statistics-text{
@@ -1012,6 +1055,74 @@ orange: #F6AC53, */
 
 /* ======================================= */
 
+/* ========= Custom Icons  ========= */
+
+.img-survey,
+.img-survey-alt{  
+  width: 105px;
+  height: 122.64px;
+  background-size: cover;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.img-survey{  
+  background-image: url('/storage/img/survey.svg');
+}
+
+.img-survey-alt{
+  background-image: url('/storage/img/survey_alt.svg');
+}
+
+
+/* ======================================= */
+
+
+/* ========= Overriding Default Pagination Style  ========= */
+
+ul.pagination{
+  border-radius: 0;
+  margin-top: 12px;
+  font-size: 1.1em;
+  background: #FFFFFF;
+  color: #293E53;
+}
+
+ul.pagination li{
+  line-height: 2.2em;
+  width: 35px;
+  text-align: center;
+}
+
+ul.pagination li.active{
+  color: #FFFFFF;
+  background: #293E53;
+}
+
+ul.pagination li a{
+  display: block;
+  color: #293E53;
+  width: 35px!important;
+  line-height: 45px!important;
+}
+
+ul.pagination li:not(:disabled):hover,
+ul.pagination li:not(:disabled) a:hover{
+  background: #34495F;
+  cursor: pointer;
+  color: #FFFFFF!important;
+  text-decoration: none;
+}
+
+/* next,prev btns is thinner than pages btns */
+ul.pagination li:first-child,
+ul.pagination li:first-child a,
+ul.pagination li:last-child,
+ul.pagination li:last-child a{
+  width: 28px!important;
+}
+
+/* ======================================= */
 
 
 /* ========= Custom Media Query  ========= */
@@ -1242,3 +1353,14 @@ orange: #F6AC53, */
 /* make the first td fit to the content */
 
 }
+
+
+/* 
+.img-survey,
+.img-survey-alt{
+  width: 105px;
+  height: 122.64px;
+  background-size: cover;
+  display: inline-block;
+} */
+

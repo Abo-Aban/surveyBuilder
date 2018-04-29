@@ -7,19 +7,35 @@ $(document).ready(function(){
 
     // save changes on click event handler
     $('.profile-data #save_changes').click(function(){
+        // submit the form
+        $('#profile_form').submit();
+        
+        
         // disable the save_changes button after saving
         $(this).prop('disabled', true);
     });
 
-    // pass1, pass2 fields keyup event
-    $('.profile-data #pass1, .profile-data #pass2').on('keyup input paste', function(){
+    // password, password2 fields keyup event
+    $('.profile-data #password, .profile-data #password2').on('keyup input paste', function(){
         // show the password match-icon if the passwords matches
-        if ($('#pass1').val() == $('#pass2').val() && $('#pass1').val() != '' && $('#pass1').val().trim().length >= 8 ){
-            $('#pass2').siblings('.inpt-icon').show();
+        if ($('#password').val() == $('#password2').val() && $('#password').val() != '' && $('#password').val().trim().length >= 6 ){
+            $('#password2').siblings('.inpt-icon').show();
         }else{
             //hide the match-icon
-            $('#pass2').siblings('.inpt-icon').hide();
+            $('#password2').siblings('.inpt-icon').hide();
             
+        }
+    });
+
+
+    // delete account button onlcick event handler
+    $('#del_acc_btn').click(function(){
+        //confirm the user of deleting 
+        var conf = confirm("Are You Sure You Want To Delete Your Account..? This Action Cannot Be Undone.")
+        
+        // if confirmed submit delete form
+        if(conf){
+            $('#del_form').submit();
         }
     });
 
